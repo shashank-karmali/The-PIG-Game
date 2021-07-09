@@ -39,7 +39,7 @@ if(gamePlaying){
 	//3.uoadte the round score only if the rolled number is not 1
 	if(dice1Num !== 1 && dice2Num !==1){
 		// add value
-		roundScore = dice1Num + dice2Num;
+		roundScore += dice1Num + dice2Num;
 		document.getElementById('current--' + activePlayer).textContent = roundScore;
 	}else{
 		//NEXT PLAYER TURN
